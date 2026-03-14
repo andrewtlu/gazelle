@@ -1,0 +1,27 @@
+[project]
+name = "gazelle"
+description = "TUI for managing OpenVPN configs on Linux."
+version = "0.0.1"
+readme = "README.md"
+license="GPL-3.0-only"
+dependencies = [
+  "textual>=8.1.1",
+  "ruff>=0.15.6",
+]
+authors = [
+  {name = "Andrew Lu", email = "andrewlulu2012@gmail.com"},
+]
+
+[tool.ruff]
+line-length = 120
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["F401"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+docstring-code-line-length = 20
