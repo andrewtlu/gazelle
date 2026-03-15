@@ -1,5 +1,3 @@
-from gazelle import Gazelle
-
 if __name__ == "__main__":
     print("""
 Hello world!
@@ -10,4 +8,3 @@ TODOs:
 - set up testing
 - set up main app structure
 """)
-    Gazelle().run()

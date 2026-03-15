@@ -6,7 +6,7 @@ from pathlib import Path
 CONFIG_DIR = Path("/etc/openvpn/client")
 
 
-def discover_configs() -> list[str]:
+def discover_configs() -> list[Path]:
     """Discovers configurations located in the configured directory."""
 
     # simply strips names, since those are only thing necessary for base connection
