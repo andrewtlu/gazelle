@@ -3,7 +3,7 @@
 from pathlib import Path
 
 # TODO: read from .config/gazelle/config.toml
-CONFIG_DIR = Path("/etc/openvpn/client")
+CONFIG_DIR = Path.home() / "VPN"
 
 
 def discover_configs() -> list[Path]:
