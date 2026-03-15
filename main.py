@@ -1,4 +1,4 @@
-from backend.config import discover_configs
+from gazelle import Gazelle
 
 if __name__ == "__main__":
     print("""
@@ -10,4 +10,4 @@ TODOs:
 - set up testing
 - set up main app structure
 """)
-    print(discover_configs())
+    Gazelle().run()
